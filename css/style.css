@@ -26,32 +26,6 @@
 
     --transition: all 400ms ease;
 }
-.light-theme {
-    --color-primary: #c9c8ea;
-    --color-success: #00bf8e;
-    --color-warning: #f7c94b;
-    --color-danger: #f75842;
-    --color-danger-variant: rgba(247, 88, 66, 0.4);
-    --color-white: #000;
-    --color-light: rgb(255, 255, 255);
-    --color-black: #af3a3afa;
-    --color-bg: #eaf6fd;
-    --color-bg1: #cfcfd7;
-    --color-bg2: #7107bd1c;
-}
-.dark-theme {
-    --color-primary: #6c63ff;
-    --color-success: #00bf8e;
-    --color-warning: #f7c94b;
-    --color-danger: #a1827e;
-    --color-danger-variant: rgba(247, 88, 66, 0.4);
-    --color-white: #07020c;
-    --color-light: rgba(160, 110, 110, 0.7);
-    --color-black: #855757fa;
-    --color-bg: #19a6f8;
-    --color-bg1: #cfcfd7a2;
-    --color-bg2: #63536e1c;
-}
 body {
     font-family: "Montserrat", sans-serif;
     color: var(--color-white);
@@ -154,9 +128,10 @@ nav button {
 .nav__menu a {
     font-size: 0.9rem;
     transition: var(--transition);
+    font-weight: 600;
 }
 .nav__menu a:hover {
-    color: var(--color-bg2);
+    text-decoration: underline;
 }
 
 /* Header */
@@ -451,8 +426,8 @@ footer ul li a:hover {
 
     /* HEADER */
     header {
-        height: 52h;
-        margin-bottom: 4rem;
+        height: 100vh;
+        margin-bottom: 5rem;
     }
     .header__container {
         gap: 0;
